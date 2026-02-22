@@ -23,6 +23,7 @@ export default defineConfig(({ mode }) => ({
         globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2}"],
       },
       manifest: {
+        id: "/",
         name: "Dépôt Oriental — Gestion",
         short_name: "Dépôt Oriental",
         description: "Application de gestion intégrée du Dépôt Oriental",

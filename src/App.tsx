@@ -15,6 +15,7 @@ import Casiers from "./pages/Casiers";
 import Personnel from "./pages/Personnel";
 import Partenaires from "./pages/Partenaires";
 import NotFound from "./pages/NotFound";
+import PWAInstallPrompt from "./components/PWAInstallPrompt";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <PWAInstallPrompt />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<AppLayout><Dashboard /></AppLayout>} />
